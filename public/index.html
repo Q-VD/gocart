@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Go-Kart Dashboard</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="container">
+            <h1>GO-KART DASHBOARD</h1>
+            <div class="card">
+                <h2 id="status">Neutraal</h2>
+                <h3>Gas</h3>
+                <progress id="bar" value="0" max="100"></progress>
+                <h2><span id="gas">0</span>%</h2>
+            </div>
+            <div class="card">
+                <table>
+                    <tr>
+                        <td>Potmeter</td>
+                        <td id="pot">0</td>
+                    </tr>
+                    <tr>
+                        <td>Servohoek</td>
+                        <td id="angle">96°</td>
+                    </tr>
+                    <tr>
+                        <td>Puls</td>
+                        <td id="pulse">1500 us</td>
+                    </tr>
+                    <tr>
+                        <td>Vooruit</td>
+                        <td id="vooruit">0</td>
+                    </tr>
+                    <tr>
+                        <td>Achteruit</td>
+                        <td id="achteruit">0</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <script src="/socket.io/socket.io.js"></script>
+        <script src="script.js"></script>
+    </body>
+</html>
+
